@@ -1,1 +1,3 @@
 # WindowStateManagement
+
+ウィンドウ（GameObject）が常にどれか一つだけ表示するようにする。ウィンドウの切り替えとEventSystemへの選択オブジェクトの受け渡しを管理する。
