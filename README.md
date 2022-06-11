@@ -13,6 +13,29 @@
 ① WindowStateManagementを常に存在するオブジェクトにコンポーネント.\
 ② WindowControlをウィンドウとして扱いたいオブジェクトにコンポーネント.\
 ③ WindowStateManagementのメソッドを呼んで,任意のウィンドウを表示.\
+```
+WindowStateManager windowStateManager;
+WindowControl[] windowControls;
+WindowControl[] popupWindowControls;
+
+// Change windowControls[1]
+windowStateManager.ChangeThisWindow(windowControls[1]);
+
+// Change main window
+windowStateManager.ChangeMainWindow();
+
+// Change windowControls[3]
+int index = windowStateManager.GetThisWindowIndex(windowControls[3]);
+windowStateManager.ChangeWindow(index);
+```
+
+// Show popupWindows[0]
+windowStateManager.ShowPopupWindow(popupWindows[0]);
+popupWindows[0].SetActive(false) // Close popupWindows[0]
+
+// Show all popupWindows
+windowStateManager.ShowPopupWindow(popupWindows);
+foreach (var w in popupWindows) w.SetActive(false) // Close all popupWindows
 
 # WindowStateManager
 
