@@ -27,7 +27,6 @@ windowStateManager.ChangeMainWindow();
 // Change windowControls[3]
 int index = windowStateManager.GetThisWindowIndex(windowControls[3]);
 windowStateManager.ChangeWindow(index);
-```
 
 // Show popupWindows[0]
 windowStateManager.ShowPopupWindow(popupWindows[0]);
@@ -36,6 +35,7 @@ popupWindows[0].SetActive(false) // Close popupWindows[0]
 // Show all popupWindows
 windowStateManager.ShowPopupWindow(popupWindows);
 foreach (var w in popupWindows) w.SetActive(false) // Close all popupWindows
+```
 
 # WindowStateManager
 
