@@ -1,11 +1,9 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using WindowStateManagement;
-//#if UNITY_EDITOR
+#if UNITY_EDITOR
 using UnityEditor;
-//#endif
+#endif
 
 namespace WindowStateManagement {
     [AddComponentMenu("WindowStateManagement/WindowStateManager")]
